@@ -9,25 +9,22 @@
 
 MyTimeAlarm::MyTimeAlarm()
 {
-
   Inizialize=true;
-
 }
 
 bool MyTimeAlarm::on(unsigned long interval)
 {
-  if (!Inizialize || AlarmOn || interval<0) return false;
+if (!Inizialize || AlarmOn || interval<0) return false;
 	
 	_interval = interval;
 	previousMillis=millis();
 	AlarmOn=true;
 	return true;
-  
 }
 
 bool MyTimeAlarm::off()
 {
-  if (!Inizialize || !AlarmOn) return false;
+if (!Inizialize || !AlarmOn) return false;
 	
 	previousMillis=0;
 	diffMillis=0;
@@ -38,13 +35,12 @@ bool MyTimeAlarm::off()
 	AlarmOn=false;
 	ChangeOn=false;
 	Inizialize=false;
-	return true;
-	
+	return true;	
 }
 
 bool MyTimeAlarm::change(unsigned long intervalchange, bool now)
 {
-  if (!Inizialize || !AlarmOn || intervalchange<0) return false;
+if (!Inizialize || !AlarmOn || intervalchange<0) return false;
 	
 	if (now) {
 		_interval=intervalchange;
@@ -56,13 +52,12 @@ bool MyTimeAlarm::change(unsigned long intervalchange, bool now)
 	_now=now;
 	ChangeOn=true;
 	return true;
-  
 }
 
 
 bool MyTimeAlarm::active()
 {
-  if (Inizialize && AlarmOn) {
+if (Inizialize && AlarmOn) {
     
 	currentMillis=millis();
 	
@@ -83,10 +78,8 @@ bool MyTimeAlarm::active()
 	}else{
 	return false;
 	}
-  
-  
-  }else{
-  return false;
-  }
+}else{
+return false;
+}
   
 }
