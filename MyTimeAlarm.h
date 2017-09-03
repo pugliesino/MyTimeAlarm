@@ -11,14 +11,14 @@
 
 class MyTimeAlarm
 {
-  public:
-    MyTimeAlarm();
-    bool on(unsigned long interval);
-    bool off();
+public:
+	MyTimeAlarm();
+	bool on(unsigned long interval);
+	bool off();
 	bool change(unsigned long intervalchange, bool now);
 	bool active();
-  private:
-    unsigned long _interval;
+private:
+	unsigned long _interval;
 	unsigned long _intervalchange;
 	bool _now;
 	bool AlarmOn=false;
