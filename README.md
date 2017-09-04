@@ -40,7 +40,7 @@ for example (in loop...)
 if (Timer1.active()) Serial.println("Alarm Timer1");
 
 
-change Timer1 immediately (Interval, true) - return true or false
+change Timer1 immediately (Interval, true) - return true or false:
 Timer1.change(3000,true);
 
 
