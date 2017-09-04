@@ -15,7 +15,7 @@ Use Libray:
 
 MyTimeAlarm Timer1; //Inizialize instances Timer1 -> MyTimeAlarm XXXXXXX;
 
-Timer1.on(5000) //set Timer1 ON with the indication of the interval in milliseconds - return true or false
+Timer1.on(5000) //set Timer1 ON with the indication of the interval in milliseconds (limit Unsigned Long) - return true or false
 
 Timer1.off() //set Timer1 OFF - return true or false
 
