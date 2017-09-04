@@ -34,7 +34,6 @@ if (!Inizialize || !AlarmOn) return false;
 	_now=false;
 	AlarmOn=false;
 	ChangeOn=false;
-	Inizialize=false;
 	return true;	
 }
 
