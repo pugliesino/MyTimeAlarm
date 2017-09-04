@@ -5,7 +5,7 @@ Library for manage Time with the control of reset millis() after 49 day and inte
 The library is used to handle pauses or temporal repetitions without using the delay () that blocks the execution of the code.
 
 The library also handles multiple instances, the millis() function reset after about 49 days (with exact time calculation after the reset) and the ability to change the interval during execution.
-When changing the range, you can indicate whether the change will occur immediately or wait for the alarm to start.
+When changing the interval, you can indicate whether the change will occur immediately or wait new alarm.
 
 
 Use Libray:
