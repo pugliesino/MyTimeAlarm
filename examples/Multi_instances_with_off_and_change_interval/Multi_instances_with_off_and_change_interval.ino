@@ -36,7 +36,7 @@ void loop() {
  }
 
 
- if (Timer2.active()) Serial.println("Alarm Timer2"); //check if Timer1 is active (interval reached) - Timer2 is never switched off (in this example)
+ if (Timer2.active()) Serial.println("Alarm Timer2"); //check if Timer2 is active (interval reached) - Timer2 is never switched off (in this example)
  
  
 }
