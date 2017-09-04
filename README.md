@@ -25,4 +25,4 @@ if (Timer1.active()) Serial.println("Alarm Timer1"); //for example (in loop...)
 
 Timer1.change(3000,true); //change Timer1 immediately (Interval, true) - return true or false
 
-Timer1.change(3000,false); //change Timer1 NOT immediately (Interval, false) - wait for the alarm to start
+Timer1.change(3000,false); //change Timer1 NOT immediately (Interval, false) - wait new alarm
