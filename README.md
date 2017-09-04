@@ -11,9 +11,11 @@ When changing the range, you can indicate whether the change will occur immediat
 Use Libray:
 
 include library
+
 #include <MyTimeAlarm.h>
 
-Inizialize instances Timer1 - for other instances -->MyTimeAlarm XXXXXXX;
+Inizialize instances Timer1 -> MyTimeAlarm XXXXXXX;
+
 MyTimeAlarm Timer1;
 
 set Timer1 ON with the indication of the interval in milliseconds - return true or false
