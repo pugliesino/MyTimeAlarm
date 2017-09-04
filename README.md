@@ -14,24 +14,37 @@ include library
 
 #include <MyTimeAlarm.h>
 
+
 Inizialize instances Timer1 -> MyTimeAlarm XXXXXXX;
 
 MyTimeAlarm Timer1;
 
+
 set Timer1 ON with the indication of the interval in milliseconds - return true or false
+
 Timer1.on(5000) 
 
+
 set Timer1 OFF - return true or false
+
 Timer1.off()
 
+
 to know if the alarm was triggered - return true or false
+
 Timer1.active()
 
-for example (in loop...):
+
+for example (in loop...)
+
 if (Timer1.active()) Serial.println("Alarm Timer1");
 
+
 change Timer2 immediately (Interval, true) - return true or false
+
 Timer2.change(3000,true);
 
+
 change Timer2 NOT immediately  - wait for the alarm to start (Interval, false)
+
 Timer2.change(3000,false);
